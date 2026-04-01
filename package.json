@@ -2,11 +2,20 @@
   "name": "@tradejs/site",
   "version": "1.0.0",
   "private": true,
+  "description": "TradeJS marketing site.",
+  "homepage": "https://tradejs.dev",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TradeJS-Dev/tradejs-site.git"
+  },
+  "bugs": {
+    "url": "https://github.com/TradeJS-Dev/tradejs-site/issues"
+  },
   "scripts": {
     "dev": "next dev --port 3003",
     "build": "next build",
     "start": "next start -H 0.0.0.0 -p 3003",
-    "lint": "yarn run -T eslint app components hooks lib --ext .js,.jsx,.ts,.tsx"
+    "lint": "eslint app components hooks lib --ext .js,.jsx,.ts,.tsx"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.9.1",
@@ -62,10 +71,20 @@
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4.2.0",
+    "@types/node": "^20.19.22",
+    "@types/react": "^19.2.2",
+    "@types/react-dom": "^19.2.2",
+    "eslint": "^9.38.0",
+    "eslint-config-next": "16.1.1",
     "postcss": "^8.5",
     "tailwindcss": "^4.2.0",
-    "tw-animate-css": "1.3.3"
+    "tw-animate-css": "1.3.3",
+    "typescript": "^5.9.3"
   },
+  "engines": {
+    "node": ">=20.0"
+  },
+  "packageManager": "npm@10.8.2",
   "license": "MIT",
   "author": "aleksnick (https://github.com/aleksnick)"
 }
